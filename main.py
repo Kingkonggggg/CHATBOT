@@ -24,6 +24,12 @@ BOT_NAME = os.environ.get("BOT_NAME")
 START_IMG = os.environ.get("START_IMG")
 
 
+bot = Client(
+    "VickBot" ,
+    api_id = API_ID,
+    api_hash = API_HASH ,
+    bot_token = BOT_TOKEN
+)
 
 
 async def is_admins(chat_id: int):
